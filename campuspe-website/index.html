@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CampusPe connects students, colleges and employers — faster." />
+  <title>CampusPe — Connect 10X Faster</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#home" aria-label="CampusPe home"><img src="assets/campuspe-logo.png" alt="CampusPe" /></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-controls="navLinks" aria-expanded="false">☰</button>
+    <nav id="navLinks" class="nav-links" aria-label="Main navigation">
+      <a href="#college">Colleges</a><a href="#employers">Employers</a><a href="#jobs">Jobs</a><a href="#partners">Blogs</a>
+    </nav>
+    <div class="nav-actions"><button class="text-button" data-modal="signin" type="button">Sign In</button><button class="button button-small" data-modal="signup" type="button">Sign Up</button></div>
+  </header>
+
+  <main id="home">
+    <section class="hero section-wrap">
+      <div class="floating-note whatsapp"><span class="note-icon green">◉</span><div><b>WhatsApp Alert</b><p>Get notified on WhatsApp</p><small>You'll get all important updates on your WhatsApp</small></div></div>
+      <div class="floating-note resume"><span class="note-icon violet">ϟ</span><div><b>Resume Builder</b><p>Build Your Resume</p><small>Build a better, faster resume that gets you hired</small></div></div>
+      <div class="eyebrow"><span>▣</span> AI-Powered Campus Assistant</div>
+      <h1>Connect <span class="gradient-text">10X Faster.</span></h1>
+      <p class="hero-subtitle">One platform connecting students, colleges &amp; employers — faster.</p>
+      <div class="looking"><span>✦</span> What are you looking for? <span>✦</span></div>
+      <div class="activity-row"><div class="activity-pill"><span class="avatar-stack"><i>A</i><i>P</i><i>N</i></span><span><b>🔥 142 students matched today</b><small>Just now · IIT, BITS, VIT</small></span></div><div class="activity-pill recruiter"><span>▣</span><span><b>Radiant Info shortlisted 8 interns</b><small>● Verified recruiter · 2 days ago</small></span></div></div>
+
+      <div class="cards-grid">
+        <article class="feature-card" id="college">
+          <div class="card-top"><span class="feature-icon">▥</span><span class="status">Coming Soon</span></div>
+          <h2>College</h2><p>Explore colleges, courses, fees, placements &amp; more</p>
+          <ul><li>Search by course, location, fees</li><li>Connect directly with colleges</li><li>Improve student placements</li></ul>
+          <button class="button full" data-modal="waitlist-college">Join Waitlist <span>♧</span></button>
+        </article>
+        <article class="feature-card featured" id="jobs">
+          <div class="card-top"><span class="feature-icon">◆</span><span class="status available">Available Now</span></div>
+          <h2>I'm Looking for a Job</h2><p>Upload your resume. We'll find jobs that fit you.</p>
+          <ul><li>Jobs from 1000+ sources</li><li>AI-powered matching</li><li>WhatsApp &amp; email alerts</li></ul>
+          <button class="button full" id="exploreJobs">Explore Jobs <span>→</span></button>
+          <div class="resume-art" aria-hidden="true"><div></div><div></div><div></div><div></div><span>⌕</span></div>
+        </article>
+        <article class="feature-card employer-card" id="employers">
+          <div class="card-top"><span class="feature-icon">▣</span><span class="status">Coming Soon</span></div>
+          <h2>I'm Hiring</h2><p>Connect with colleges and find candidates — from students to graduates.</p>
+          <ul><li>Connect directly with colleges</li><li>Find the right candidates</li><li>Simplify your hiring</li></ul>
+          <button class="button full" data-modal="waitlist-employer">Join Waitlist <span>♧</span></button>
+        </article>
+      </div>
+      <div class="stats"><div><span class="stat-icon">♧</span><p><strong>800+</strong><small>Students</small></p></div><div><span class="stat-icon">♙</span><p><strong>130+</strong><small>Colleges</small></p></div><div><span class="stat-icon">▤</span><p><strong>100+</strong><small>Jobs &amp; internships</small></p></div><div><span class="stat-icon shield">⬡</span><p><strong>100%</strong><small>Safe &amp; Trusted</small></p></div></div>
+    </section>
+
+    <section class="opportunity-section" id="opportunities" aria-labelledby="opportunityTitle">
+      <div class="opportunity-layout">
+        <div class="opportunity-copy">
+          <div class="opportunity-kicker"><span class="pulse-dot"></span> 01 • OPPORTUNITY DISCOVERY</div>
+          <h2 id="opportunityTitle">Stop searching.<br><span>Start getting matched.</span></h2>
+          <p class="opportunity-intro">Tell CampusPe your skills, preferences and goals. We continuously monitor company career pages and job sources, find opportunities that match you, and notify you when they appear.</p>
+          <div class="steps-list">
+            <article class="step-card active"><span class="step-number">01</span><div><h3>Set your preferences</h3><p>Tell us what you're looking for, from colleges and courses to jobs, internships and gigs.</p></div><span class="step-tag violet-tag">Smart Profile</span></article>
+            <article class="step-card"><span class="step-number">02</span><div><h3>Discover relevant opportunities</h3><p>Explore colleges and career opportunities matched to your profile, interests and goals.</p></div><span class="step-tag">AI Ranked</span></article>
+            <article class="step-card"><span class="step-number">03</span><div><h3>Get notified when something fits</h3><p>Get notified when a relevant college or new opportunity is found, so you can act early.</p></div><span class="step-tag green-tag">Instant Alerts</span></article>
+          </div>
+          <button class="button explore-opportunities" id="exploreOpportunities">Explore opportunities <span aria-hidden="true">→</span></button>
+        </div>
+        <div class="feed-column">
+          <div class="opportunity-feed" id="opportunityFeed">
+            <header class="feed-header"><div class="feed-brand-icon" aria-hidden="true">ϟ</div><div class="feed-heading"><h3>CampusPe Opportunity Feed</h3><p>Colleges &amp; opportunities matched to you</p></div><span class="match-count"><i></i> 12 new matches today</span></header>
+            <div class="feed-tabs" role="tablist" aria-label="Filter opportunities">
+              <button class="feed-tab selected" type="button" role="tab" aria-selected="true" data-filter="All">All</button>
+              <button class="feed-tab" type="button" role="tab" aria-selected="false" data-filter="Colleges">Colleges</button>
+              <button class="feed-tab" type="button" role="tab" aria-selected="false" data-filter="Jobs">Jobs</button>
+              <button class="feed-tab" type="button" role="tab" aria-selected="false" data-filter="Internships">Internships</button>
+              <button class="feed-tab" type="button" role="tab" aria-selected="false" data-filter="Freelance">Freelance</button>
+              <button class="feed-tab" type="button" role="tab" aria-selected="false" data-filter="Part-time">Part-time</button>
+            </div>
+            <div class="opportunity-list" id="opportunityList">
+              <article class="opportunity-card" data-category="Colleges"><div class="opportunity-logo iim-logo" aria-hidden="true">IIM</div><div class="opportunity-info"><div class="opportunity-title-row"><h4>IIM Bangalore</h4><span class="category-label college-label">Top College</span></div><p class="opportunity-meta"><span>▤ MBA</span><span>♧ Bengaluru</span><strong>₹ 3L+</strong></p><p class="opportunity-description">India's premier management institute with global exposure...</p></div><button class="mini-cta" type="button" data-opportunity="IIM Bangalore">View Details</button></article>
+              <article class="opportunity-card" data-category="Internships"><div class="opportunity-logo google-logo" aria-hidden="true">G</div><div class="opportunity-info"><div class="opportunity-title-row"><h4>Product Intern</h4><span class="category-label internship-label">Internship</span></div><p class="opportunity-meta"><span>♧ Bengaluru</span><span>▣ Hybrid</span><strong>₹ 35K/mo</strong></p><p class="opportunity-description">Work on real products, learn from top engineers and build...</p></div><button class="mini-cta" type="button" data-opportunity="Product Intern">Apply Now</button></article>
+              <article class="opportunity-card" data-category="Freelance"><div class="opportunity-logo notion-logo" aria-hidden="true">N</div><div class="opportunity-info"><div class="opportunity-title-row"><h4>Marketing Gig</h4><span class="category-label freelance-label">Freelance</span></div><p class="opportunity-meta"><span>⌂ Remote</span><span>♧ Freelance</span><strong>₹ 10K - ₹ 25K</strong></p><p class="opportunity-description">Create content and help with social media campaigns for...</p></div><button class="mini-cta" type="button" data-opportunity="Marketing Gig">View Details</button></article>
+              <article class="opportunity-card extra-opportunity" data-category="Jobs" hidden><div class="opportunity-logo job-logo" aria-hidden="true">JS</div><div class="opportunity-info"><div class="opportunity-title-row"><h4>Junior Frontend Developer</h4><span class="category-label job-label">Full-time</span></div><p class="opportunity-meta"><span>♧ Bengaluru</span><span>▣ Hybrid</span><strong>₹ 5–8 LPA</strong></p><p class="opportunity-description">Build accessible web experiences with a collaborative product team...</p></div><button class="mini-cta" type="button" data-opportunity="Junior Frontend Developer">View Details</button></article>
+              <article class="opportunity-card extra-opportunity" data-category="Part-time" hidden><div class="opportunity-logo parttime-logo" aria-hidden="true">PT</div><div class="opportunity-info"><div class="opportunity-title-row"><h4>Campus Community Associate</h4><span class="category-label parttime-label">Part-time</span></div><p class="opportunity-meta"><span>♧ Remote</span><span>▣ Flexible</span><strong>₹ 8K/mo</strong></p><p class="opportunity-description">Help students discover events, opportunities and campus resources...</p></div><button class="mini-cta" type="button" data-opportunity="Campus Community Associate">View Details</button></article>
+            </div>
+            <footer class="feed-footer"><button type="button" id="viewAllOpportunities" class="view-all-link">View all matched opportunities <span aria-hidden="true">→</span></button><span>Curated for you <b>•</b> Updated daily</span></footer>
+          </div>
+          <p class="feed-note"><span aria-hidden="true">↶</span> A mix of colleges, jobs,<br> internships and gigs — all in one place.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="resume-section" id="resume" aria-labelledby="resumeTitle">
+      <div class="resume-glow"></div>
+      <div class="resume-inner">
+        <span class="section-badge"><i></i> TRY IT LIVE <b>v2.4 AI Engine</b></span>
+        <h2 id="resumeTitle">Upload your resume.<br><span>Find jobs that fit.</span></h2>
+        <p class="resume-lead">Upload once. CampusPe reads your skills, experience, and preferences —<br class="desktop-break"> then finds relevant jobs across 1,000+ sources.</p>
+        <div class="upload-card" id="uploadDropzone">
+          <div class="upload-corners" aria-hidden="true"></div>
+          <span class="floating-proof match-proof"><b>ϟ</b><span><strong>98% Match Rate</strong><small>AI semantic rank</small></span></span>
+          <span class="floating-proof ats-proof"><b>♙</b><span><strong>ATS Compliant</strong><small>Standardized parser</small></span></span>
+          <div class="upload-symbol" aria-hidden="true">↑</div>
+          <h3 id="uploadHeading">Upload your resume</h3>
+          <p id="uploadHelp">PDF, DOC, or DOCX · Up to 10MB · We'll use it to understand your skills and experience.</p>
+          <input id="resumeFile" type="file" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" hidden>
+          <button class="button upload-button" id="uploadButton" type="button">Upload resume <span>↑</span></button>
+          <small class="drop-hint">or drag and drop your file here</small>
+          <div class="file-types"><span>PDF</span><span>DOC</span><span>DOCX</span></div>
+          <p class="upload-status" id="uploadStatus" role="status"></p>
+        </div>
+        <div class="resume-process" aria-label="Resume matching steps">
+          <article><b class="process-check">✓</b><span><strong>Resume analyzed</strong><small>● Ready in 4s</small></span></article>
+          <article><b class="process-check violet-check">✓</b><span><strong>Skills matched</strong><small>Deep taxonomy</small></span></article>
+          <article><b class="process-check purple-check">✓</b><span><strong>Experience matched</strong><small>Contextual seniority</small></span></article>
+          <article><b class="process-check blue-check">✓</b><span><strong>1,000+ sources searched</strong><small>Real-time aggregators</small></span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="audience-section college-audience" id="collegeDetails" aria-labelledby="collegeTitle">
+      <div class="audience-layout">
+        <div class="audience-copy"><span class="section-badge"><i></i> 02 • FOR COLLEGES</span><h2 id="collegeTitle">Get Discovered<br>by <span>Students and<br>Recruiters.</span></h2><p>Put your college in front of students searching for the right course and recruiters looking for the right talent. CampusPe helps you build your presence, attract enquiries and connect with opportunities.</p><button class="button" data-modal="waitlist-college" type="button">List Your College <span>→</span></button></div>
+        <div class="audience-cards">
+          <article class="audience-card"><div class="audience-card-top"><span>01</span><small>VERIFIED PROFILE</small><b class="green-chip">✿ NAAC A++ Ready</b></div><h3>Build your college profile</h3><p>Showcase your college, courses, fees, campus, placements and achievements in one structured profile that students and recruiters can discover.</p><em>98% Match</em></article>
+          <article class="audience-card"><div class="audience-card-top"><span>02</span><small>DIRECT ENROLL</small><b class="blue-chip">▣ Direct Enquiries</b></div><h3>Students discover and connect</h3><p>Students searching for colleges can discover your profile, explore your courses and fees, and connect directly with your admission team.</p><em class="muted-chip">● WHATSAPP / CHAT</em></article>
+          <article class="audience-card"><div class="audience-card-top"><span>03</span><small>CAMPUS RECRUITING</small><b class="purple-chip">▦ 500+ Hiring Partners</b></div><h3>Recruiters discover your College</h3><p>Companies hiring fresh talent can discover your college, explore your talent and connect with your placement team.</p><em class="blue-chip">⚖ Connect Directly</em></article>
+          <article class="audience-card"><div class="audience-card-top"><span>04</span><small>LIVE HUB</small><b class="red-chip">● LIVE PLACEMENTS</b></div><h3>Track placements in real time</h3><p>Track students, interviews, offers and placements from one centralized dashboard.</p><em class="blue-chip">Students · Interviews · Offers</em></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="audience-section employer-audience" id="employerSection" aria-labelledby="employerTitle">
+      <div class="audience-layout employer-layout">
+        <div class="audience-copy"><span class="section-badge"><i></i> 03 • FOR EMPLOYERS</span><h2 id="employerTitle">Stop running<br>campus drives.<br><span>Start hiring the right people.</span></h2><p>Post a role in minutes and reach relevant candidates without the time, travel and coordination of traditional hiring. CampusPe helps you discover, match and connect with talent from colleges and beyond.</p><button class="button" data-modal="waitlist-employer" type="button">Post a Job <span>→</span></button></div>
+        <div class="employer-steps">
+          <article><span>01</span><div><h3>Post a role in minutes <small>INSTANT SETUP</small></h3><p>Define your skills, location and hiring requirements. Reach relevant candidates across the CampusPe network.</p></div><aside><b class="green-chip">ϟ 5 Min Deployment</b><small>500+ Campus Network</small></aside></article>
+          <article><span>02</span><div><h3>Receive a matched shortlist <small>INSTANT SETUP</small></h3><p>Get candidates matched to your role by skills, experience, location and hiring requirements.</p></div><aside><b class="purple-chip">◉ Zero CV Clutter</b><small>Tier 1–Tier 3 Parity</small></aside></article>
+          <article><span>03</span><div><h3>Connect with candidates directly <small>INSTANT SETUP</small></h3><p>Message, schedule interviews, and move candidates through your pipeline — all in one place.</p></div><aside><b class="blue-chip">▢ In-App Scheduling</b><small>1-Click Video / Chat</small></aside></article>
+          <article><span>04</span><div><h3>Reduce your time-to-hire <small>INSTANT SETUP</small></h3><p>Find matched candidates, connect with them and move from shortlist to offer in one streamlined workflow.</p></div><aside><b class="solid-chip">&lt;2 DAYS</b><b class="green-chip">57% Faster Hiring</b></aside></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="app-section" id="app" aria-labelledby="appTitle">
+      <div class="app-heading"><h2 id="appTitle">Checkout Our App Interface Look</h2><p>Experience the power of a unified campus ecosystem right in your pocket. <strong>CampusPe</strong> offers a tailored interface for every user: students can explore trending courses, colleges can showcase their campus life, and companies can post job vacancies directly to a pool of qualified candidates.</p></div>
+      <div class="phone-gallery" aria-label="CampusPe mobile app previews">
+        <div class="phone phone-small phone-one"><div class="phone-notch"></div><div class="phone-status">9:41　●●●</div><b>Hi, Amit Kumar</b><small>Discover</small><div class="phone-banner">See how you can<br>find a big opportunity</div><div class="phone-search">⌕ Search jobs, internships...</div><h4>Recommended Jobs</h4><div class="phone-listing"><i>G</i><span>Software Engineer<small>Google · Bengaluru</small></span><b>Apply Now</b></div><div class="phone-nav">⌂　▤　▣　♙</div></div>
+        <div class="phone phone-mid phone-two"><div class="phone-notch"></div><div class="phone-status">9:41　●●●</div><div class="phone-bluebar">Post a Job</div><h4>About Job</h4><small>Job Title*</small><div class="phone-input"></div><small>Enter skills</small><div class="phone-input"></div><small>Work Mode*</small><div class="phone-input"></div><small>Experience (Years)</small><div class="phone-input"></div><small>Educational Qualification</small><div class="phone-input"></div><div class="phone-nav">⌂　▤　▣　♙</div></div>
+        <div class="phone phone-main"><div class="phone-notch"></div><div class="phone-status">9:41　●●●</div><b>Hi, Amit Kumar</b><small>Discover</small><div class="phone-hero">XYZ University<br><strong>Explore</strong></div><h4>Top Courses　 <small>View all →</small></h4><div class="course-bubbles"><i>🎓</i><i>📚</i><i>🧪</i><i>💻</i></div><h4>Trending Colleges</h4><div class="campus-image">VICTORY COLLEGE</div><div class="phone-listing"><span>Victory College<small>B.Tech · 4 years</small></span><b>Apply Now</b></div><div class="phone-nav">⌂　▤　▣　♙</div></div>
+        <div class="phone phone-mid phone-four"><div class="phone-notch"></div><div class="phone-status">9:41　●●●</div><div class="phone-bluebar">My Application</div><h4>Applied (5)　 Shortlisted (2)</h4><div class="phone-job"><i>G</i><span>Software Engineer<small>Google Inc · Bengaluru</small></span></div><div class="phone-job"><i>f</i><span>Full Stack Web Developer<small>Flip · Mumbai</small></span></div><div class="phone-job"><i>◈</i><span>Backend Developer<small>Tokopedia · New Delhi</small></span></div><div class="phone-job"><i>▣</i><span>Frontend Developer<small>Fukita · Bengaluru</small></span></div><div class="phone-nav">⌂　▤　▣　♙</div></div>
+        <div class="phone phone-small phone-five"><div class="phone-notch"></div><div class="phone-status">9:41　●●●</div><b>XYZ College</b><small>Discover</small><div class="phone-search">⌕ Search name, email...</div><h4>Courses</h4><div class="campus-image">Campus Life</div><div class="phone-listing"><span>B.Tech<small>Computer Science</small></span><b>View Details</b></div><div class="phone-nav">⌂　▤　▣　♙</div></div>
+      </div>
+      <div class="gallery-dots" role="tablist" aria-label="Choose app preview"><button class="active" data-phone="0" aria-label="Show student dashboard"></button><button data-phone="1" aria-label="Show job form"></button><button data-phone="2" aria-label="Show discover screen"></button><button data-phone="3" aria-label="Show applications"></button><button data-phone="4" aria-label="Show college dashboard"></button></div>
+      <div class="download-app"><div><h2>Download App Now</h2><p>Elevate your academic journey with CampusPe, the all-in-one digital ecosystem designed to bridge the gap between education and industry. Whether you're a student seeking your next big internship, a college looking to empower your cohort, or a company scouting for top-tier talent, CampusPe streamlines the connection. Your career doesn't start at graduation—it starts here.</p><div class="store-buttons"><a href="#app" class="store-badge" data-store="Google Play"><span>▶</span><small>GET IT ON<strong>Google Play</strong></small></a><a href="#app" class="store-badge" data-store="App Store"><span>●</span><small>Download on the<strong>App Store</strong></small></a></div></div><div class="phone-stack" aria-hidden="true"><div class="stack-device stack-back">CampusPe<br><br>Trending Jobs<br><hr>Software Engineer<br><hr>Product Intern</div><div class="stack-device stack-front">CampusPe　 Discover<br><br><div class="campus-image">Victory College</div><br>Top Courses<br><br>✦　✦　✦<br><br>Apply Now</div></div></div>
+    </section>
+
+    <section class="support-section" id="support"><div class="support-card"><h2>Still have questions?</h2><p>Our support team is here to help you succeed. Get in<br class="desktop-break"> touch anytime.</p><div><a class="button" href="mailto:contactus@campuspe.com">Contact Support <span>↗</span></a><a class="button button-outline" href="tel:+916362606464">Schedule a Call <span>◉</span></a></div></div></section>
+
+    <section class="partners section-wrap" id="partners"><p>Trusted by partners across India</p><img src="assets/partners.png" alt="CampusPe partners: GINSERV, Startup Karnataka, TalentSpotify, Radiant Info and partner organizations" /></section>
+    <section class="jobs-panel section-wrap" id="jobSearchPanel" hidden><div><span class="eyebrow">YOUR NEXT OPPORTUNITY</span><h2>Find a role that fits you.</h2><p>Search opportunities by title, skill, or location.</p></div><form id="jobSearch"><input id="jobQuery" type="search" placeholder="e.g. Frontend Developer, Bengaluru" aria-label="Search jobs" /><button class="button" type="submit">Search jobs →</button></form><p class="search-message" id="searchMessage" role="status"></p></section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-cta"><div><h2>Ready for what’s next?</h2><p>Discover colleges, find opportunities, list your<br> institution, or start hiring with CampusPe.</p></div><div class="footer-cta-actions"><a class="button" href="#college">Explore Colleges →</a><a class="button" href="#opportunities">Find Opportunities →</a><a class="button button-outline" href="#college">List Your College →</a><a class="button button-outline" href="#employerSection">Post a Job →</a></div></div>
+    <div class="footer-main"><div class="footer-brand"><a href="#home"><img src="assets/campuspe-logo.png" alt="CampusPe"></a><h3>From choosing a college to finding your next opportunity.</h3><p>CampusPe connects students, colleges and employers in one place.</p></div><div class="footer-column"><h3>For Students</h3><a href="#college">Explore Colleges</a><a href="#opportunities">Find Opportunities</a><a href="#opportunities">Internships</a><a href="#opportunities">Full-time Jobs</a><a href="#opportunities">Part-time &amp; Gig</a><a href="#resume">Application Tracker</a></div><div class="footer-column"><h3>For Colleges</h3><a href="#college">List Your College</a><a href="#college">Admissions</a><a href="#college">Fee Collection</a><a href="#college">Placements</a></div><div class="footer-column"><h3>For Employers</h3><a href="#employerSection">Post a Job</a><a href="#employerSection">Find Talent</a><a href="#employerSection">Campus Hiring</a></div><div class="footer-column"><h3>Company</h3><a href="#home">About Us</a><a href="#support">Contact Us</a><a href="#partners">Blogs</a><a href="#support">Careers</a></div><div class="footer-column legal-column"><h3>Legal &amp; Policies</h3><a href="#legalNote">Privacy Policy</a><a href="#legalNote">Terms &amp; Conditions</a><a href="#legalNote">Refund &amp; Cancellation Policy</a><a href="#legalNote">Cookie Policy</a><a href="#legalNote">Grievance Redressal</a><a href="#legalNote">Job &amp; Internship Disclaimer</a><a class="all-policies" href="#legalNote">View all policies →</a><aside id="legalNote">Separate user, institution and employer terms can live inside the full Policies page.</aside></div></div>
+    <div class="footer-contact"><span>✉　contactus@campuspe.com</span><span>▣　+91 6362606464</span><span class="footer-audience">● Students · Colleges · Employers</span></div><div class="footer-bottom"><span>2026 CampusPe Technologies Pvt. Ltd. <a href="#legalNote">Privacy</a> <a href="#legalNote">Terms</a> <a href="#legalNote">Grievance</a></span><div class="social-links"><a href="#footer" aria-label="LinkedIn">in</a><a href="#footer" aria-label="Instagram">◎</a><a href="#footer" aria-label="Twitter">♥</a><a href="#footer" aria-label="Facebook">f</a><a href="#footer" aria-label="WhatsApp">◉</a><a href="#footer" aria-label="YouTube">▶</a></div></div>
+  </footer>
+
+  <dialog id="actionDialog"><form method="dialog" class="dialog-close-form"><button class="close-dialog" aria-label="Close dialog">×</button></form><div class="dialog-content"><div class="dialog-mark">✦</div><h2 id="dialogTitle">Join CampusPe</h2><p id="dialogDescription">Get updates when CampusPe is ready for you.</p><form id="leadForm"><label for="fullName">Your name</label><input id="fullName" name="name" placeholder="Enter your name" required /><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" required /><button class="button full" type="submit">Continue</button><p class="form-message" id="formMessage" role="status"></p></form></div></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
